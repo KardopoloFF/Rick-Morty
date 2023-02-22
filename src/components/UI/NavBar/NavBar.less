@@ -1,0 +1,70 @@
+@import '../../../less/_variables.less';
+@import '../../../less/_mixins.less';
+
+.nav_panel {
+	height: 70px;
+	display: flex;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	background-color: @brand_color_nav;
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	
+	img {
+		padding: @nav_padding;
+		width: 200px;
+		border-radius: 50%;
+		transition: 0.3s;
+
+		&:hover {
+			transform: rotate(30deg);
+		}
+	}
+}
+
+
+.nav_searchBar {
+	padding: @nav_padding;
+
+	input {
+		font-family: @font_for_ui;
+		font-size: 16px;
+		padding: @nav_padding;
+		width: 280px;
+		height: 40px;
+		border-radius: @radius;
+		border: none;
+	}
+
+	button {
+		.search_button
+	}
+}
+
+.nav_favorite_link {
+	padding: @nav_padding;
+	color: @brand_color_cards;
+	margin-top: 5px;
+	transition: 0.3s;
+	border-radius: @radius;
+
+	.link {
+		font-family: @font_for_ui;
+		color: @brand_color_cards;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	
+	&:hover {
+		transform: scale(1.10);
+		box-shadow: rgba(149, 157, 165, 0.79) 0px 8px 24px;
+	}
+
+}
+
+.error_lable {
+	font-family: @font_for_ui;
+	font-size: 24px;
+	color: rgb(125, 2, 2);
+	text-align: center;
+	margin-top: 25px;
+}

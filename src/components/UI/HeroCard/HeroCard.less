@@ -1,0 +1,38 @@
+@import '../../../less/_variables.less';
+@import '../../../less/_mixins.less';
+
+.card_container {
+	width: 350px;
+	background-color: @brand_color_cards;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+	&:hover {
+		filter: brightness(80%);
+		transition: 0.2s;
+	}
+
+	img {
+		padding: 1px;
+		width: 348px;
+	}
+
+	.description {
+		font-size: @descr_font_size;
+		font-family: @font_for_cards;
+		padding: 5px;
+		margin: 25px 25px 50px 25px;
+	}
+
+	.buttons {
+		padding: 5px;
+		margin: 25px 25px 10px 25px;
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			.cardsButtons
+		}
+	}
+}

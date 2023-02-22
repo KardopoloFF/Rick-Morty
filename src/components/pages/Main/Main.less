@@ -1,0 +1,33 @@
+@import '../../../less/_variables.less';
+
+.find_animation {
+	animation-name: search_fetching;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternative;
+	animation-timing-function: linear;
+
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+	color: @brand_color_nav;
+}
+
+@keyframes search_fetching {
+	100% {
+		transform: scale(1.5);
+	}
+}
+
+.main_container {
+	margin: auto;
+	width: 1200px;
+
+}
+
+.hero_container {
+	margin: 150px 50px 25px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
